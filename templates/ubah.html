@@ -1,0 +1,50 @@
+{%extends ('baseAdmin.html')%} {% block judul %} Ubah Pesanan {% endblock %} 
+
+{% block JudulKonten %} Ubah Pesanan
+{% endblock %} 
+
+
+{% block konten %}
+
+  <div class="konten">
+    <form class="p-4" action="{{url_for('proses_ubah')}}" method="POST">
+      {% for row in hasil %}
+      <div class="form-group">
+        <label class="" for="">Id Pesanan</label>
+        <input type="text" name="id_pesanan" class="form-control" placeholder="id_pesanan" value="{{row.0}}" />
+      </div>
+      <div class="form-group">
+        <label class="" for="">Nama</label>
+        <input type="text" name="nama" class="form-control" placeholder="nama" value="{{row.1}}" />
+      </div>
+      <div class="form-group">
+        <label class="" for="">Nomor Telpon</label>
+        <input type="text" name="no_telp" class="form-control" placeholder="no_telp" value="{{row.2}}" />
+      </div>
+      <div class="form-group">
+        <label class="" for="">Jenis</label>
+        <input type="text" name="jenis" class="form-control" placeholder="jenis" value="{{row.3}}" />
+      </div>
+      <div class="form-group">
+        <labe class="" for="">Berat</label>
+        <input type="text" name="berat" class="form-control" placeholder="berat" value="{{row.4}}" />
+      </div>
+      <div class="form-group">
+        <label class="" for="">Tanggal</label>
+        <input type="text" name="tanggal" class="form-control" placeholder="tanggal" value="{{row.5}}" />
+      </div>
+      <div class="form-group">
+        <label class="" for="">Harga</label>
+        <input type="text" name="harga" class="form-control" placeholder="harga" value="{{row.6}}" />
+      </div>
+    
+      {% endfor %}
+    
+      <div class="box-footer mt-3">
+      <input class="btn btn-primary" type="submit" value="Submit">
+      <a class="btn btn-primary" href="/admin/">Cancel</a>
+      </div>
+    </form>
+    </div>
+
+{% endblock %}

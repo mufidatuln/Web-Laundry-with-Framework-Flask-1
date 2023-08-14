@@ -1,0 +1,148 @@
+.navbar{
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-brand-padding-y: 1rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 2rem;
+    --bs-navbar-brand-color: #FFDD55;
+    --bs-navbar-brand-hover-color: #FFFF;
+}
+
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: 1.2rem;
+    font-weight: var(--bs-nav-link-font-weight);
+    color: white;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(154, 169, 247);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #f28e30;
+    box-shadow: 0px 15px 20px #f7cda5;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  .main{
+    padding: 10px;
+    display: flex;
+    gap: 3px;
+}
+.footer{
+    padding: 30px;
+    background-color: #5363f3;
+}
+
+
+.col-md h4{
+  color: #FFDD55;
+}
+
+.col-md a{
+  font-size: large;
+  color: #000000;
+}
+
+.col-md ul li a{
+  color: #000000;
+  font-size: 1.1rem;
+  transition: .4s;
+}
+.col-md ul li a:hover{
+  color: white;
+  transform: translateX(-12px);
+}
+
+.social{
+  background-color: #4e3ff6;
+  display: flex;
+}
+
+.social col{
+  color: #000;
+  font-size: medium;
+}
+
+.box1{
+  width: 50;
+  height: auto;
+  background-color: #FFDD55;
+  border-radius: 20px;
+  box-shadow: #f28e30;
+}
+
+.formulir{
+ width: 600px;
+ padding: 15px;
+ border-radius: 15px;
+ background-color:#FFDD55;
+ border-color: #000;
+}
+
+.button1 {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(154, 169, 247);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button1:hover {
+  background-color: #f28e30;
+  box-shadow: 0px 15px 20px #f7cda5;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button1:active {
+  transform: translateY(-1px);
+}
+
+.box-header{
+  background-color: antiquewhite;
+  font-weight: bold;
+}
+
+.login{
+  width: 100;
+  background-color: #f7cda5;
+}
+
+.nota{
+  width: 600px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color:#FFDD55;
+  border-color: #000;
+ }

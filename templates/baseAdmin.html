@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block judul%} {%endblock%}</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+<!-- content area -->
+<!-- Navbar -->
+<nav>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid" style="background-color: #5363f3">
+        <a class="navbar-brand px-4" href="{{url_for('index')}}"> Admin My Laundry</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </nav>
+    <div class="content-wrapper">
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            {% block JudulKonten%} {%endblock%}
+                        </div>
+                        <!-- data tabel(database) area -->
+                        <div class="box-body">
+                            {%block konten%}{%endblock%}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+</body>
+</html>

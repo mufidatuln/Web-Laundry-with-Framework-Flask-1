@@ -1,0 +1,33 @@
+{% extends ('base.html')%}
+{%block title%}Layanan{% endblock %}
+{% block section %}
+
+<div class="container text-center px-5 py-5 mb-5">
+  <div class="row px-4 mb-3 gap-5">
+    <div class="col box1">
+      <img width="300" height="200" src="{{url_for('static',filename='img/reguler.png')}}" alt="reguler">
+      <p>
+      Reguler
+      <p>
+      <p>Ready Dalam 2 Hari
+        Harga : 5000/kg
+      </p>
+
+    </div>
+    <div class="col box1 ">
+      <img width="400" height="200" src="{{url_for('static',filename='img/expres.png')}}" alt="expres">
+      <p>
+      Expres
+      <p>
+      <p>Ready Dalam 24 jam
+        Harga : 10.000/kg
+      </p>
+    </div>
+  </div>
+  <a href="/form/"><button >Order</button></a>
+  
+  </div>
+
+      
+
+{%endblock%}

@@ -1,0 +1,42 @@
+{% extends ('baseForm.html')%}
+
+{% block FormTitle %} Form Pemesanan {%endblock%}
+{%block Judul%} <h5>Pesan My Laundry</h5> {%endblock%}
+{% block form %}
+<div class="formulir">
+      <form class="" action="{{url_for('proses_pesan')}}" method="POST">
+        <div class="mb-4">
+          <label for="exampleFormControlInput1" class="form-label">Nama</label>
+          <input type="text" name="nama" class="form-control" id="exampleFormControlInput1" placeholder="nama">
+        </div>
+        <select class="form-select mb-4" name="member" aria-label="Default select example">
+          <option selected>Punya Kartu Member?</option>
+          <option value="ya">YA</option>
+          <option value="bukan">BUKAN</option>
+        </select>
+        <div class="mb-4">
+          <label for="exampleFormControlInput1" class="form-label">No Telepon</label>
+          <input type="text" name="no_telp" class="form-control" id="exampleFormControlInput1" placeholder="no telpon">
+        </div>
+        <select class="form-select mb-4" name="jenis" aria-label="Default select example">
+          <option selected>Pilih Layanan</option>
+          <option value="Expres">Expres</option>
+          <option value="Reguler">Reguler</option>
+        </select>
+        <div class="mb-4">
+          <label for="exampleFormControlTextarea1" class="form-label">Berat</label>
+          <input class="form-control" name="berat" id="exampleFormControlTextarea1" placeholder="Kg"></input>
+        </div>
+        <div class="mb-4">
+          <label for="exampleFormControlTextarea1" class="form-label">Tanggal</label>
+          <input type="date" class="form-control" name="tanggal" id="exampleFormControlTextarea1" placeholder="date"></input>
+        </div>
+        <div class="mb-5 d-flex gap-3">
+        <a href="/nota/"><button type="submit">Pesan</button></a>
+        <a class="button1" href="/home/">Cancel</a>
+        </div>
+      </form>
+</div>
+{%endblock%}
+</body>
+</html>

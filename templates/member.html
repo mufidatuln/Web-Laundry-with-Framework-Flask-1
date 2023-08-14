@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{%block title%}Daftar Member{% endblock %}
+{% block section %}
+<div class="box text-center">
+    <h4>Daftar Member</h4>
+</div>
+<div class="daftar d-flex justify-content-center">
+<div class="formulir d-flex justify-content-center p-5">
+    <form action="{{url_for('daftar_member')}}" method="POST">
+        <div class="formulir m">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nama</label>
+            <input type="text" name="nama" class="form-control" id="exampleFormControlInput1" placeholder="nama">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nomor Telpon</label>
+            <input type="text" name="no_telp" class="form-control" id="exampleFormControlInput1" placeholder="Nomor Telpon">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Alamat</label>
+            <input type="text-area" name="alamat" class="form-control" id="exampleFormControlInput1" placeholder="Alamat">
+        </div>
+        <div class="box-footer mt-5">
+            <input class="button1" type="submit" value="Submit">
+            <a class="button1" href="/home/">Cancel</a>
+            </div>
+    </form>
+</div>
+</div>
+
+
+
+{% endblock %}
